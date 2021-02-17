@@ -1,0 +1,48 @@
+.subscribe
+  background: #1565D8 url(../icons/back.svg) center center no-repeat
+  &-wrapper
+    max-width: 1142px
+    margin: auto
+  &-container
+    +position(auto)
+    padding: 100px 0px 100px 0
+  &-text
+    min-height: 138px
+    +position(436px, space-between, center, flex, column, wrap, left)
+    flex-basis: 0 1 436px
+  &-title
+    +use-font($hkgb, 48px, 60px, $light)
+    letter-spacing: 0.2px
+  &-p
+    +use-font($osr, 18px, 32px, $light-color)
+  &-form
+    max-width: 447px
+    margin-right: 64px
+    &__inner
+      position: relative
+      &-input
+        width: 100%
+        padding: 16px 196px 16px 48px
+        border: 1px solid $light-grey
+        border-radius: 8px
+        background-color: $light
+        +use-font($ossb, 16px, 22px, $dark)
+        background-image: url(../icons/letter.svg)
+        background-repeat: no-repeat
+        background-position: center left 20px
+        margin-bottom: 7px
+      &-button
+        position: absolute
+        top: 4px
+        right: 4px
+        max-width: 177px
+        min-width: 177px
+        max-height: 47px
+        overflow: hidden
+        padding: 11px 0 12px
+        +use-font($osb, 18px, 25px, $light)
+        background-color: $dark
+        border-radius: 4px
+        border: none
+        cursor: pointer
+

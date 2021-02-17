@@ -1,0 +1,64 @@
+.hero
+  margin-bottom: 120px
+  &-container
+    max-width: 1340px
+    padding-left: 30px
+    padding-right: 30px
+    margin: auto
+  &__inner
+    background: url(../img/hero.jpg) no-repeat center center
+    +position(100%, space-between, flex-start, flex, column, nowrap, left)
+    width: 100%
+    min-height: 700px
+    padding-top: 62px
+    padding-bottom: 45px
+    padding-left: 107px
+    border-radius: 8px
+    position: relative
+    overflow: hidden
+    &::before
+      content: ""
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background: linear-gradient(to right, #E8EAE9 30%, rgba(238, 238, 238, 0.0001) 40%, transparent 100%)
+      z-index: -1
+  &-tag
+    margin-bottom: 29px
+    z-index: 1
+    width: 175px
+  &__title
+    width: 425px
+    margin-top: 0
+    margin-bottom: 28px
+    +use-font($hkgr, 56px, 68px)
+    letter-spacing: 1.2px
+  &__text
+    width: 652px
+    margin-bottom: 52px
+  &__button
+    display: inline-block
+    width: 259px
+    padding: 15px 40px
+    margin-bottom: 48.5px
+    +use-font($osb, 18px, 25px, $light)
+    background-color: $dark
+    border-radius: 8px
+    transition: all 0.2s ease-out 0.2s
+  &-benefits
+    +position(464px)
+    &__item
+      +position(auto)
+      letter-spacing: 0.2px
+    &__icon
+      width: 36px
+      height: 36px
+      margin-right: 8px
+      padding: 7.5px
+      border: 0.75px solid rgba(21, 101, 216, 0.2)
+      border-radius: 12px
+      fill: $accent
+    &__text
+      +use-font($hkgm, 16px, 20px)

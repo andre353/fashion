@@ -1,0 +1,46 @@
+.footer
+  min-height: 522px
+  &-wrapper
+    padding-top: 128px
+    padding-bottom: 78px
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    column-gap: 20px
+    grid-template-rows: repeat(1, 1fr)
+    &__main
+      grid-column: 1/4
+      +position(auto, flex-start, flex-start, flex, column, nowrap, flex-start, flex-start)
+    &__logo
+      fill: $dark
+      width: 90px
+      height: 28px
+      margin-bottom: 28px
+      transition: all 0.2s ease-out 0.2s
+    &__text
+      margin-bottom: 32px
+      +use-font($osr, 16px, 28px, $grey)
+    &__icons
+      +position(185px)
+    &__icon
+      width: 42px
+      height: 40px
+      fill: $dark
+      transition: all 0.2s ease-out 0.2s
+    &__navigation
+      grid-column: 4/6
+      margin-left: 2px
+    &__services
+      margin-left: 4px
+      grid-column: 6/8
+    &__company
+      margin-left: 5px
+      grid-column: 8/10
+    &__contacts
+      margin-left: 6px
+      grid-column: 10/13
+    &__title
+      +use-font($osb, 18px, 25px, $dark)
+      margin-bottom: 31px
+    &__item
+      +use-font($osr, 16px, 22px, $dark)
+      margin-bottom: 24px

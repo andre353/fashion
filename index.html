@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ehya Fashion</title>
+    <link rel="shortcut icon" type="image/x-icon" href="icons/fashion.ico" sizes="16x16">
+    <link rel="stylesheet preload prefetch preconnect" as="style" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link
+      rel="stylesheet preload dns-prefetch preconnect"
+      as="style"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+    <link rel="stylesheet preload" as="style" href="css/style.css"/>
+  </head>
+
+  <body>
+    <header class="navbar navbar__mobile_fixed">
+      <div class="container">
+        <div class="navbar-wrapper">
+          <a
+            href="index.html"
+            class="logo navbar-logo"
+            data-aos="fade-right"
+            data-aos-delay="100"
+            >
+            <svg class="lazyload img navbar-logo__img">
+              <use xlink:href="icons/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <!-- /.navbar-logo -->
+          
+          <nav class=" navbar-wrapper-big">
+            <svg class="lazyload navbar-wrapper__close">
+              <use xlink:href="icons/sprite.svg#close"></use>
+            </svg>
+            <ul class="navbar-wrapper-small navbar-wrapper-small__mobile_hidden" data-aos="fade-right" data-aos-delay="200">
+              <li class="navbar-wrapper-small__item">
+                <a href="index.html" class="link navbar__link">Главная</a>
+              </li>
+              <li class="navbar-wrapper-small__item">
+                <a href="#collection" class="link navbar__link">Новинки</a>
+              </li>
+              <li class="navbar-wrapper-small__item">
+                <a href="#trends" class="link navbar__link">Тренды</a>
+              </li>
+              <li class="navbar-wrapper-small__item">
+                <a href="#reviews" class="link navbar__link">Отзывы</a>
+              </li>
+              <li class="navbar-wrapper-small__item">
+                <a href="#" class="link navbar__link">Контакты</a>
+              </li>
+              <li class="enter-button navbar-wrapper-small__item navbar-wrapper-small__item--active">
+                <a href="#" class="link navbar__link" data-aos="fade-left" data-aos-delay="200">Войти</a>
+              </li>
+            </ul>
+          </nav>
+          
+          <button class="navbar__menu-button burger" aria-label="Right Align">
+            <span class="burger__line" aria-hidden="true"></span>
+            <span class="burger__line" aria-hidden="true"></span>
+            <span class="burger__line" aria-hidden="true"></span>
+          </button>
+        </div>
+        <!-- /.navbar-wrapper -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.navbar .navbar__mobile_fixed -->
+    <main class="main">
+
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero__inner">
+            <span class="tag hero-tag">#Ready to be cool</span>
+            <h1 class="hero__title">Каждый может <span>быть крутым</span> и&nbsp;модным</h1>
+            <p class="text hero__text">Чтобы быть в тренде и стать модным, вам нужно носить отличную одежду и обновлять свой стиль.
+              Всё
+              это вы можете найти
+              здесь. Начните сейчас.</p>
+            <a href="#" class="hero__button">Подобрать одежду</a>
+            <div class="hero-benefits">
+              <div class="hero-benefits__item">
+                <svg class="lazyload hero-benefits__icon">
+                  <use xlink:href="icons/sprite.svg#online-payment"></use>
+                </svg>
+                <span class="hero-benefits__text">Онлайн оплата</span>
+              </div>
+              <!-- /.hero-benefits__item -->
+              <div class="hero-benefits__item">
+                <svg class="lazyload hero-benefits__icon">
+                  <use xlink:href="icons/sprite.svg#warranty"></use>
+                </svg>
+                <span class="hero-benefits__text">Гарантия</span>
+              </div>
+              <!-- /.hero-benefits__item -->
+              <div class="hero-benefits__item">
+                <svg class="lazyload hero-benefits__icon">
+                  <use xlink:href="icons/sprite.svg#quality"></use>
+                </svg>
+                <span class="hero-benefits__text">Качество</span>
+              </div>
+              <!-- /.hero-benefits__item -->
+            </div>
+            <!-- </div> -->
+          </div>
+          <!-- /.hero__inner -->
+        </div>
+        <!-- /.hero-container -->
+      </section>
+      <!-- /.hero -->
+
+      <section id="collection" class="collection">
+        <div class="container collection-container">
+          <div class="collection-wrapper">
+            <div class="collection-group">
+              <div class="collection-group__img collection-group__img1">
+                <picture>
+                  <source type="image/webp" srcset="img/collection/collection-main.webp">
+                  <source type="image/jpg" srcset="img/collection/collection-main.jpg">
+                  <img class="collection-group__image collection-group__image1" src="img/collection/collection-main.jpg" alt="Image: collection main look" loading="lazy">
+                </picture>  
+              </div>
+              <div class="collection-group__img collection-group__img3">
+                <picture>
+                  <source type="image/webp" srcset="img/collection/collection1.webp">
+                  <source type="image/jpg" srcset="img/collection/collection1.jpg">
+                  <img class="img collection-group__image" src="img/collection/collection1.jpg" alt="Image: collection second look" loading="lazy">
+                </picture>  
+              </div>
+              <div class="collection-group__img collection-group__img2">
+                <picture>
+                  <source type="image/webp" srcset="img/collection/collection2.webp">
+                  <source type="image/jpg" srcset="img/collection/collection2.jpg">
+                  <img class="img collection-group__image" src="img/collection/collection2.jpg" alt="Image: collection third look" loading="lazy">
+                </picture>  
+              </div>
+            </div> 
+            <!-- /.collection-group -->
+            <div class="collection-description">
+              <h2 class="subtitle collection-title">Новая зимняя коллекция</h2>
+              <p class="text collection-text">Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции, нажав кнопку ниже. Успейте купить, пока коллекция есть в наличии. Используйте код EHYA20, чтобы получить 20%&nbsp;скидку.</p>
+              <a class="collection-next" href="#">
+                <div class="collection-next__container">
+                  <span class="linking collection-next__link">Посмотреть коллекцию</span>
+                </div>     
+                <svg class="collection-next__icon">
+                  <use xlink:href="icons/sprite.svg#arrow-collection"></use>
+                </svg>
+                <!-- <img src="icons/arrow-collection.svg" alt="Icon: see next" class="collection-next__icon"> -->
+              </a>
+            </div> 
+            <!-- /.collection-description -->
+          </div>
+          <!-- /.collection-wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.collection -->
+
+      <section id="trends" class="trends"> 
+        <div class="trends-container">
+          <div class="trends-wrapper">
+            <div class="trends-top">
+              <h2 class="subtitle trends-title">Тренды</h2>
+              <ul class="trends-top__tabs">
+                <li data-target="#new-arrival" class="trends-top__tab trends-top__tab--active"><span class="trends-top__tab-span">Новинки</span></li>
+                <li data-target="#best-sellers" class="trends-top__tab"><span class="trends-top__tab-span">Лучшее</span></li>
+                <li data-target="#upcoming" class="trends-top__tab"><span class="trends-top__tab-span">Скоро</span></li>
+              </ul>
+            </div> 
+            <!-- /.trends-top -->
+
+            <ul class="trends-cards-wrapper">
+              <li id="new-arrival" class="trends-cards trends-cards--active">
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend.webp">
+                        <source type="image/png" srcset="img/trends/trend.png">
+                        <img src="img/trends/trend.png" alt="Image: first collection image" class="img trends-card__img-1" loading="lazy">
+                      </picture>
+                    </div>
+                  </div>
+                  <h3 class="trends-card__title">Minimalist Style</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$25.7</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                    <!-- <img src="icons/shopping-cart.svg" alt="Icon: shopping cart" class="img trends-card__icon"> -->
+                  </div>
+                </div> 
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-2.webp">
+                        <source type="image/png" srcset="img/trends/trend-2.png">
+                        <img src="img/trends/trend-2.png" alt="Image: second collection image" class="img trends-card__img-2" loading="lazy">
+                      </picture>
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Luxury Gown</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$30.6</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div> 
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-3.webp">
+                        <source type="image/png" srcset="img/trends/trend-3.png">
+                        <img src="img/trends/trend-3.png" alt="Image: third collection image" class="img trends-card__img-3" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Full Coloristy</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$25.7</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div> 
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-4.webp">
+                        <source type="image/png" srcset="img/trends/trend-4.png">
+                        <img src="img/trends/trend-4.png" alt="Image: third collection image" class="img trends-card__img-4" loading="lazy">
+                      </picture>
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Pinky Winky</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$109</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div> 
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-5.webp">
+                        <source type="image/png" srcset="img/trends/trend-5.png">
+                        <img src="img/trends/trend-5.png" alt="Image: fifth collection image" class="img trends-card__img-5" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Holiday Vibes</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$51.2</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div> 
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-6.webp">
+                        <source type="image/png" srcset="img/trends/trend-6.png">
+                        <img src="img/trends/trend-6.png" alt="Image: sixth collection image" class="img trends-card__img-6" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Swaggie Shaggy</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$81.3</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div> 
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-7.webp">
+                        <source type="image/png" srcset="img/trends/trend-7.png">
+                        <img src="img/trends/trend-7.png" alt="Image: seventh collection image" class="img trends-card__img-7" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Red Formal</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$66.8</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div> 
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <a href="#" class="trends-card__link">
+                    <svg class="img trends-card__link-plus">
+                      <use xlink:href="icons/sprite.svg#plus"></use>
+                    </svg>
+                    <!-- <img src="icons/plus.svg" alt="Icon: plus" class="trends-card__link-plus"> -->
+                    <h3 class="trends-card__link-title">Смотреть больше коллекций</h3>
+                  </a>
+                </div>
+                <!-- /.trends-card -->
+              </li>
+              <!-- /.trends-cards -->
+              <li id="best-sellers" class="trends-cards">
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-5.webp">
+                        <source type="image/png" srcset="img/trends/trend-5.png">
+                        <img src="img/trends/trend-5.png" alt="Image: fifth collection image" class="img trends-card__img-5">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Holiday Vibes</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$51.2</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-6.webp">
+                        <source type="image/png" srcset="img/trends/trend-6.png">
+                        <img src="img/trends/trend-6.png" alt="Image: sixth collection image" class="img trends-card__img-6" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Swaggie Shaggy</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$81.3</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-7.webp">
+                        <source type="image/png" srcset="img/trends/trend-7.png">
+                        <img src="img/trends/trend-7.png" alt="Image: seventh collection image" class="img trends-card__img-7" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Red Formal</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$66.8</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend.webp">
+                        <source type="image/png" srcset="img/trends/trend.png">
+                        <img src="img/trends/trend.png" alt="Image: first collection image" class="img trends-card__img-1" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Minimalist Style</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$25.7</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-2.webp">
+                        <source type="image/png" srcset="img/trends/trend-2.png">
+                        <img src="img/trends/trend-2.png" alt="Image: second collection image" class="img trends-card__img-2" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Luxury Gown</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$30.6</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-3.webp">
+                        <source type="image/png" srcset="img/trends/trend-3.png">
+                        <img src="img/trends/trend-3.png" alt="Image: third collection image" class="img trends-card__img-3" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Full Coloristy</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$25.7</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-4.webp">
+                        <source type="image/png" srcset="img/trends/trend-4.png">
+                        <img src="img/trends/trend-4.png" alt="Image: forth collection image" class="img trends-card__img-4" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>
+                  <h3 class="trends-card__title">Pinky Winky</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$109</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <a href="#" class="trends-card__link">
+                    <svg class="img trends-card__link-plus">
+                      <use xlink:href="icons/sprite.svg#plus"></use>
+                    </svg>
+                    <h4 class="trends-card__link-title">Смотреть больше коллекций</h4>
+                  </a>
+                </div>
+                <!-- /.trends-card -->
+              </li>
+              <!-- /.trends-cards -->
+              <li id="upcoming" class="trends-cards">
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-3.webp">
+                        <source type="image/png" srcset="img/trends/trend-3.png">
+                        <img src="img/trends/trend-3.png" alt="Image: third collection image" class="img trends-card__img-3" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Full Coloristy</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$25.7</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-4.webp">
+                        <source type="image/png" srcset="img/trends/trend-4.png">
+                        <img src="img/trends/trend-4.png" alt="Image: forth collection image" class="img trends-card__img-4" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Pinky Winky</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$109</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-6.webp">
+                        <source type="image/png" srcset="img/trends/trend-6.png">
+                        <img src="img/trends/trend-6.png" alt="Image: sixth collection image" class="img trends-card__img-6" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Swaggie Shaggy</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$81.3</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-7.webp">
+                        <source type="image/png" srcset="img/trends/trend-7.png">
+                        <img src="img/trends/trend-7.png" alt="Image: seventh collection image" class="img trends-card__img-7" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Red Formal</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$66.8</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /.trends-card -->             
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend.webp">
+                        <source type="image/png" srcset="img/trends/trend.png">
+                        <img src="img/trends/trend.png" alt="Image: first collection image" class="img trends-card__img-1" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Minimalist Style</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$25.7</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-2.webp">
+                        <source type="image/png" srcset="img/trends/trend-2.png">
+                        <img src="img/trends/trend-2.png" alt="Image: second collection image" class="img trends-card__img-2" loading="lazy"> 
+                      </picture>  
+                    </div>
+                  </div>    
+                  <h3 class="trends-card__title">Luxury Gown</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$30.6</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <div class="trends-card__image">
+                    <div class="trends-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/trends/trend-5.webp">
+                        <source type="image/png" srcset="img/trends/trend-5.png">
+                        <img src="img/trends/trend-5.png" alt="Image: fifth collection image" class="img trends-card__img-5" loading="lazy">
+                      </picture>  
+                    </div>
+                  </div>  
+                  <h3 class="trends-card__title">Holiday Vibes</h3>
+                  <div class="trends-card__group">
+                    <span class="trends-card__price">$51.2</span>
+                    <svg class="img trends-card__icon">
+                      <use xlink:href="icons/sprite.svg#shopping-cart"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!-- /.trends-card -->
+                <div class="trends-card">
+                  <a href="#" class="trends-card__link">
+                    <svg class="img trends-card__link-plus">
+                      <use xlink:href="icons/sprite.svg#plus"></use>
+                    </svg>
+                    <h4 class="trends-card__link-title">Смотреть больше коллекций</h4>
+                  </a>
+                </div>
+                <!-- /.trends-card -->
+              </li>
+              <!-- /.trends-cards -->
+            </ul>
+          </div>
+          <!-- /.trends-wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.trends -->
+
+      <section id="reviews" class="reviews">
+        <div class="reviews-container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="reviews-wrapper swiper-slide">
+              <svg class="reviews-icon">
+                <use xlink:href="icons/sprite.svg#quote-left"></use>
+              </svg>
+              <p class="reviews-text">Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские. Я покупала несколько раз из
+              коллекций, и что мне нравится, это то, что они действительно неподвластны времени, а качество ткани просто превосходно. Я с нетерпением жду новых коллекций от сезона к сезону</p>
+              <h5 class="reviews-span">Алисия Пума - клиент Fashun</h5>
+            </div> 
+            <!-- /.reviews-wrapper .swiper-slide -->
+            <div class="reviews-wrapper swiper-slide">
+              <svg class="reviews-icon">
+                <use xlink:href="icons/sprite.svg#quote-left"></use>
+              </svg>
+              <p class="reviews-text">Мне нравится этот стиль за возможность чувствовать себя комфортно свободно в том, что на мне одето. ... Не ношу
+              спортивную одежду. У меня нет ни кроссовок, ни спортивного костюма, даже этих маечек и легинсов или как они правильно
+              называются.</p>
+              <h5 class="reviews-span">Елена Климова - клиент Fashun</h5>
+            </div> 
+            <!-- /.reviews-wrapper .swiper-slide -->
+            <div class="reviews-wrapper swiper-slide">
+              <svg class="reviews-icon">
+                <use xlink:href="icons/sprite.svg#quote-left"></use>
+              </svg>
+              <p class="reviews-text">На сегодняшний день, существует много различных стилей одежды, чтобы люди могли выбирать, что надеть по разным случаям.
+              Что касается меня, мне нравится носить различные виды одежды, но, конечно, одежда должна соответствовать случаю.</p>
+              <h5 class="reviews-span">Варвара Цой - клиент Fashun</h5>
+            </div> 
+            <!-- /.reviews-wrapper .swiper-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- /.reviews-container -->
+      </section>
+      <!-- /.reviews -->
+
+      <section class="history">
+        <div class="history-wrapper">
+          <div class="history-all">
+            <div class="history-all__description">
+              <span class="tag history-all__tag">Истории</span>
+              <h2 class="subtitle history-all__title"><span>Это </span> История Fashun</h2>
+              <p class="text history-all__text">Ознакомьтесь с нашим рассказом о&nbsp;моде. Написано нашим дизайнером и&nbsp;специалистом</p>
+              <div class="history-all__buttons">
+                <button class="history-all__buttons-wrapper history-all__buttons-wrapper-left"></button>
+                <button class="history-all__buttons-wrapper  history-all__buttons-wrapper-right history-all__buttons-wrapper-right--active"></button>  
+              </div> 
+              <!-- /.history-wrapper__buttons -->
+            </div> 
+            <!-- /.history-all__description -->
+            <div class="history-all__cards swiper-container history-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide history-all-slide">
+                  <div class="history-all-slide__card card">
+                    <picture>
+                      <source type="image/webp" srcset="img/history/history.webp">
+                      <source type="image/jpg" srcset="img/history/history.jpg">
+                      <img src="img/history/history.jpg" alt="Image: a woman reads Fashun magazin" class="img card__img" loading="lazy">
+                    </picture>  
+                    <!-- <div class="swiper-lazy-preloader"></div> -->
+                    <div class="card__inner">
+                      <h6 class="card__inner-title">Mix & Match Style 01: повседневный и формальный стиль</h6>
+                      <a href="#" class="card__inner-readmore">Читать далее</a>
+                    </div>
+                    <!-- /.history-card__inner -->
+                  </div>
+                  <!-- /.history-card -->
+                  <div class="history-all-slide__card card">
+                    <picture>
+                      <source type="image/webp" srcset="img/history/history-1.webp">
+                      <source type="image/jpg" srcset="img/history/history-1.jpg">
+                      <img src="img/history/history-1.jpg" alt="Image: a woman reads Fashun magazin" class="img card__img" loading="lazy">
+                    </picture>  
+                    <!-- <div class="swiper-lazy-preloader"></div> -->
+                    <div class="card__inner card__inner-2">
+                      <h6 class="card__inner-title">Лайфхак: Купите одежду Thrifft на воскресном рынке</h6>
+                      <a href="#" class="card__inner-readmore">Читать далее</a>
+                    </div>  
+                    <!-- /.history-card__inner -->
+                  </div> 
+                  <!-- /.history-card -->
+                </div> 
+                <!-- /.swiper-slide-->
+                <div class="swiper-slide history-all-slide">
+                  <div class="history-all-slide__card card">
+                    <picture>
+                      <source type="image/webp" srcset="img/history/history-1.webp">
+                      <source type="image/jpg" srcset="img/history/history-1.jpg">
+                      <img src="img/history/history-1.jpg" alt="Image: a woman reads Fashun magazin" class="img card__img" loading="lazy">
+                    </picture>  
+                    <!-- <div class="swiper-lazy-preloader"></div> -->
+                    <div class="card__inner">
+                      <h6 class="card__inner-title">Mix & Match Style 02: стиль первой карточки 2-го слайдера</h6>
+                      <a href="#" class="card__inner-readmore">Читать далее</a>
+                    </div>
+                    <!-- /.history-card__inner -->
+                  </div>
+                  <!-- /.history-card -->
+                  <div class="history-all-slide__card card">
+                    <picture>
+                      <source type="image/webp" srcset="img/history/history.webp">
+                      <source type="image/jpg" srcset="img/history/history.jpg">
+                      <img src="img/history/history.jpg" alt="Image: a woman reads Fashun magazin" class="img card__img" loading="lazy">
+                    </picture>  
+                    <div class="swiper-lazy-preloader"></div>
+                    <div class="card__inner">
+                      <h6 class="card__inner-title">Стиль второй карточки 2-го слайдера</h6>
+                      <a href="#" class="card__inner-readmore">Читать далее</a>
+                    </div>
+                    <!-- /.history-card__inner -->
+                  </div>
+                  <!-- /.history-card -->
+                </div>
+                <!-- /.swiper-slide-->
+                <div class="swiper-slide history-all-slide">
+                  <div class="history-all-slide__card card">
+                    <picture>
+                      <source type="image/webp" srcset="img/history/history.webp">
+                      <source type="image/jpg" srcset="img/history/history.jpg">
+                      <img src="img/history/history.jpg" alt="Image: a woman reads Fashun magazin" class="img card__img" loading="lazy">
+                    </picture>  
+                    <!-- <div class="swiper-lazy-preloader"></div> -->
+                    <div class="card__inner">
+                      <h6 class="card__inner-title">Mix & Match Style 03: стиль первой карточки 3-го слайдера</h6>
+                      <a href="#" class="card__inner-readmore">Читать далее</a>
+                    </div>
+                    <!-- /.history-card__inner -->
+                  </div>
+                  <!-- /.history-card -->
+                  <div class="history-all-slide__card card">
+                    <picture>
+                      <source type="image/webp" srcset="img/history/history-1.webp">
+                      <source type="image/jpg" srcset="img/history/history-1.jpg">
+                      <img src="img/history/history-1.jpg" alt="Image: a woman reads Fashun magazin" class="img card__img" loading="lazy">
+                    </picture>  
+                    <!-- <div class="swiper-lazy-preloader"></div> -->
+                    <div class="card__inner">
+                      <h6 class="card__inner-title">Лайфхак: стиль второй карточки 3-го слайдера</h6>
+                      <a href="#" class="card__inner-readmore">Читать далее</a>
+                    </div>
+                    <!-- /.history-card__inner -->
+                  </div>
+                  <!-- /.history-card -->
+                </div>
+                <!-- /.swiper-slide-->
+                <div class="swiper-slide history-all-slide">
+                  <div class="history-all-slide__card card">
+                    <picture>
+                      <source type="image/webp" srcset="img/history/history-1.webp">
+                      <source type="image/jpg" srcset="img/history/history-1.jpg">
+                      <img src="img/history/history-1.jpg" alt="Image: a woman reads Fashun magazin" class="img card__img" loading="lazy">
+                    </picture>  
+                    <!-- <div class="swiper-lazy-preloader"></div> -->
+                    <div class="card__inner">
+                      <h6 class="card__inner-title">Mix & Match Style 04: стиль первой карточки 4-го слайдера</h6>
+                      <a href="#" class="card__inner-readmore">Читать далее</a>
+                    </div>
+                    <!-- /.history-card__inner -->
+                  </div>
+                  <!-- /.history-card -->
+                  <div class="history-all-slide__card card">
+                    <picture>
+                      <source type="image/webp" srcset="img/history/history.webp">
+                      <source type="image/jpg" srcset="img/history/history.jpg">
+                      <img src="img/history/history.jpg" alt="Image: a woman reads Fashun magazin" class="img card__img" loading="lazy">
+                    </picture>  
+                    <!-- <div class="swiper-lazy-preloader"></div> -->
+                    <div class="card__inner">
+                      <h6 class="card__inner-title">Лайфхак: стиль второй карточки 4-го слайдера</h6>
+                      <a href="#" class="card__inner-readmore">Читать далее</a>
+                    </div>
+                    <!-- /.history-card__inner -->
+                  </div>
+                  <!-- /.history-card -->
+                </div>
+                <!-- /.swiper-slide-->
+              </div> 
+              <!-- /.history-wrapper__right -->
+            </div>
+            <!-- / .history-all -->
+          </div>
+          <!-- /.swiper-wrapper history-all  -->
+        </div>
+        <!-- /.swiper-container history-wrapper -->
+      </section>
+      <!-- /.history -->
+
+      <section class="subscribe">
+        <div class="subscribe-wrapper">
+          <div class="subscribe-container">
+            <div class="subscribe-text">
+              <h4 class="subscribe-title">Подпишитесь</h4>
+              <p class="subscribe-p">Напишите свой адрес электронной почты. Мы&nbsp;будем присылать вам новости из мира моды.</p>
+            </div>
+            <!-- /.subscribe-text -->
+            <form action="send.php" method="POST" class="subscribe-form">
+              <div class="subscribe-form__inner">
+                <input class="subscribe-form__inner-input" id="myform" type="email" name="email" placeholder="Ваш Emaill" required>
+                <span id="emailMessage"></span>
+                <button class="subscribe-form__inner-button" type="submit" name="submitSubscribe">Подписаться</button>
+              </div>
+            </form>
+            <!-- /.subscribe-form -->
+          </div>
+          <!-- /.subscribe-container -->
+        </div>
+        <!-- /.subscribe-wrapper -->
+      </section> 
+      <!-- /.subscribe -->
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-wrapper">
+          <div class="footer-wrapper__group footer-wrapper__main">
+            <a href="index.html">
+              <svg class="icon footer-wrapper__logo">
+                <use xlink:href="icons/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <p class="footer-wrapper__text">Интернет-магазин брендовой одежды с оплатой онлайн</p>
+            <div class="footer-wrapper__icons">
+              <a href="http://www.gmail.com" target="_blank" class="footer-wrapper__link" rel="nofollow noopener noreferrer">
+                <svg class="lazyload icon footer-wrapper__icon">
+                  <use xlink:href="icons/sprite.svg#gmail"></use>
+                </svg>
+              </a>
+              <a href="http://www.twitter.com" target="_blank" class="footer-wrapper__link" rel="nofollow noopener noreferrer">
+                <svg class="lazyload icon footer-wrapper__icon">
+                  <use xlink:href="icons/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+              <a href="http://www.instagram.com" target="_blank" class="footer-wrapper__link" rel="nofollow noopener noreferrer">
+                <svg class="lazyload icon footer-wrapper__icon">
+                  <use xlink:href="icons/sprite.svg#insta"></use>
+                </svg>
+              </a>
+              <a href="http://www.linkedin.com" target="_blank" class="footer-wrapper__link" rel="nofollow noopener noreferrer">
+                <svg class="lazyload icon footer-wrapper__icon">
+                  <use xlink:href="icons/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </div> 
+          <!-- /.footer-wrapper__main -->
+          <div class="footer-wrapper__group footer-wrapper__navigation">
+            <h5 class="footer-wrapper__title">Навигация</h5>
+            <ul class="footer-wrapper__list">
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Новая коллекция</a></li>
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Трендовая одежда</a></li>
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Истории Fashun</a></li>
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Отзывы клиентов</a></li>
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Вся одежда</a></li>
+            </ul>
+          </div> 
+          <!-- /.footer-wrapper__navigation -->
+          <div class="footer-wrapper__group footer-wrapper__services">
+            <h5 class="footer-wrapper__title">Сервисы</h5>
+            <ul class="footer-wrapper__list">
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Рассрочка на 6 мес</a></li>
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Кредит на 12 мес</a></li>
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Доставка по РФ</a></li>
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Возврат покупок</a></li>
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Акции и кэшбек</a></li>
+            </ul>
+          </div> 
+          <!-- /.footer-wrapper__services -->
+          <div class="footer-wrapper__group footer-wrapper__company">
+            <h5 class="footer-wrapper__title">Компания</h5>
+            <ul class="footer-wrapper__list">
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Об Ehya</a></li>
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Правила сайта</a></li>
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Обработка данных</a></li>
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Вакансии</a></li>
+            </ul>
+          </div> 
+          <!-- /.footer-wrapper__company -->
+          <div class="footer-wrapper__group footer-wrapper__contacts">
+            <h5 class="footer-wrapper__title">Контакты</h5>
+            <ul class="footer-wrapper__list">
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Группа Фейсбук</a></li>
+              <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Канал Youtube</a></li>
+            </ul>
+          </div> 
+          <!-- /.footer-wrapper__contacts -->
+        </div>
+        <!-- /.footer-wrapper -->
+      </div>
+    </footer>
+    <!-- /.footer -->
+    <div class="modal" id="enter-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <button class="modal__close">
+          <img src="img/close.png" alt="Icon: close" />
+        </button>
+        <h3 class="modal__title modal__title--mb-3">Добро пожаловать!</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <div class="modal__input-group">
+            <input type="email" class="input modal__input" id="email" placeholder="Ваш логин*" name="email" autocomplete="off" required minlength="7" />
+            <span id="emailCheck"></span>
+          </div>
+          <div class="modal__input-group">
+            <input type="password" class="input modal__input modal__input-pass" id="pass" placeholder="Ваш пароль*" name="password" autocomplete="off" required minlength="7"/>
+            <span id="passwordCheck"></span>
+          </div>
+          <div class="modal__bottom">
+            <button class="button modal__button" id="btn" type="submit" name="submitAuth">
+              Авторизоваться
+            </button>
+            <span class="modal__info">*&nbsp;Required&nbsp;Fields</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

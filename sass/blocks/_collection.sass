@@ -1,0 +1,50 @@
+.collection
+  margin-bottom: 145px
+  &-wrapper
+    +position(100%, space-between, center, flex, row, wrap, flex-start)
+    // min-height: 741px
+  &-group
+    display: grid
+    grid-template-columns: repeat(2, 320px)
+    grid-gap: 30px
+    grid-template-rows: repeat(2, 230px)
+    &__img
+      object-fit: cover
+      overflow: hidden
+      border-radius: 8px
+    &__img1
+      grid-column: 1/2
+      grid-row: 1/3
+    &__image
+      width: 100%
+      transition: transform 0.2s ease-out 0.2s
+    &__img2
+      grid-column: 2/3
+      grid-row: 1/2
+    &__img3
+      grid-column: 2/3
+      grid-row: 2/3
+  &-description
+    min-height: 100%
+    +position(412px, flex-start, left, flex, column, wrap, left)
+  &-title
+    margin-top: 10px
+    margin-bottom: 24px
+  &-text
+    width: 392px
+    height: 100%
+    margin-bottom: 41px
+  &-next
+    +position(auto, initial)
+    max-width: 259px
+    &__container
+      +position(auto)
+      max-width: 227px
+    &__link
+      transition: all 0.2s ease-out 0.2s
+    &__icon
+      +use-font($osb, 14px, 16px, $accent)
+      fill: $accent
+      width: 13px
+      height: 16px
+      margin-left: 19px

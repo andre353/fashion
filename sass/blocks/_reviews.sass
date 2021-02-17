@@ -1,0 +1,36 @@
+.reviews
+  margin-bottom: 80px
+  &-container
+    max-width: 800px
+    // min-height: 389px
+    margin: 0 auto
+  &-wrapper
+    +position(100%, space-between, left, flex, column, wrap, center, center, center)
+  &-icon
+    fill:#FAAD13
+    margin-bottom: 24px
+    width: 80px
+    height: 92px
+  &-text
+    margin-bottom: 28px
+    text-align: center
+    +use-font($hkgr, 20px, 42px, $dark)
+    letter-spacing: 0.133333px
+    max-height: 168px
+    overflow: hidden
+  &-span
+    +use-font($hkgb, 20px, 24px, $dark)
+    letter-spacing: 0.2px
+    margin-bottom: 55px
+
+.swiper-container-horizontal
+  .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+    bottom: 0px
+    left: 0
+    width: 100%
+  .swiper-pagination-bullets
+    .swiper-pagination-bullet
+      margin: 0px 7px
+      width: 6px
+      height: 6px
+      background: $dark

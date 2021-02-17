@@ -1,0 +1,86 @@
+.history
+  margin-bottom: 138px
+  &-wrapper
+    width: 1150px
+    margin: 0 auto
+  &-all
+    padding-top: 120px
+    width: 100%
+    min-height: 606px
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-gap: 20px
+    grid-template-rows: repeat(1, 1fr)
+    &__description
+      grid-column: 1/6
+      +position(auto, flex-start, flex-start, flex, column, nowrap, left)
+    &__tag
+      width: 102px
+    &__title
+      max-width: 337px
+      min-height: 120px
+      margin-top: 28px
+      margin-bottom: 24px
+    &__text
+      max-width: 392px
+      margin-bottom: 16px
+    &__buttons
+      +position(132px)
+      &-wrapper
+        margin-top: 33px
+        width: 56px
+        height: 56px
+        position: relative
+        outline: none
+        cursor: pointer
+        transition: all 0.2s ease-out 0.2s
+        &-right
+          background: url(../icons/button-right.svg) center no-repeat
+          &--active
+            background: url(../icons/button-right--active.svg) center no-repeat
+        &-left
+          background: url(../icons/button-left.svg) center no-repeat
+          &--active
+            background: url(../icons/button-left--active.svg) center no-repeat
+    &__cards
+      grid-column: 6/13
+      background-color: $light
+      +position(662px)
+    &-slide
+      padding-top: 10px
+      height: 475px
+      padding-right: 10.11px
+      +position(662px, space-between, flex-start)
+      &__card
+        width: 312px
+        height: 467px
+  &-container
+    margin-right: 0
+    margin-left: 0
+
+.card
+  position: relative
+  border-radius: 8px 8px 0px 0px
+  overflow: hidden
+  &__img
+    width: 312px
+    height: 317px
+    transition: all 0.2s ease-out 0.2s
+  &__inner
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    position: absolute
+    bottom: 0
+    left: 10.11px
+    width: 100%
+    height: 169px
+    padding: 21px 32px 12px 21px
+    background-color: #FAFDFF
+    &-title
+      +use-font($hkgr, 22px, 32px, $dark)
+      font-weight: 600
+      letter-spacing: 0.2px
+      margin-bottom: 20px
+    &-readmore
+      +use-font($ossb, 16px, 22px, $accent)

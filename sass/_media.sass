@@ -1,0 +1,1030 @@
+@media (max-width: 1220px)
+  .container
+    max-width: 930px
+  .collection
+    &-wrapper
+      +position(100%, space-between, center, flex, column)
+      min-height: 806px
+    &-group
+      flex-basis: 100%
+      grid-template-columns: repeat(2, 322px)
+      grid-template-rows: repeat(2, 230px)
+      margin-bottom: 40px
+    &-description
+      min-height: 100%
+      +position(672px, flex-start, left, flex, column, wrap, left)
+    &-title
+      width: 100%
+    &-text
+      width: 100%
+  .trends
+    &-wrapper
+      +position(100%, space-between, center, flex, column)
+    &-cards
+      grid-template-columns: repeat(3, 280px)
+      grid-gap: 48px
+      grid-template-rows: repeat(3, 441px)
+      width: 936px
+    &-card
+      &__group
+        +position(260px)
+  .history
+    margin-bottom: 80px
+    &-wrapper
+      max-width: 1150px
+      width: 92%
+    &-all
+      padding-top: 80px
+      margin: auto
+      +position(auto, space-between, center, flex, column, nowrap, center, center, center)
+      min-height: 887px
+      &__description
+        +position(auto, space-between, center, flex, column, wrap, center, center, center)
+        flex-basis: 100%
+        align-items: center
+      &__title
+        text-align: center
+        max-width: 90%
+        min-height: 60px
+      &__text
+        max-width: 90%
+        margin-bottom: 36px
+      &__buttons
+        margin-bottom: 36px
+
+  .subscribe
+    &-container
+      +position(auto, space-between, center, flex, column, nowrap, center, center, center)
+    &-p
+      width: 100%
+      margin-bottom: 56px
+    &-text
+      min-height: 138px
+      +position(80%, space-between, center, flex, column, wrap, center)
+    &-title
+      margin-bottom: 14px
+    &-p
+      margin-bottom: 56px
+    &-form
+      margin-right: 0
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(11, 1fr)
+      column-gap: 30px
+      grid-template-rows: repeat(1, 1fr)
+      &__main
+        margin-left: 20px
+        grid-column: 1/4
+      &__navigation
+        grid-column: 4/6
+      &__services
+        grid-column: 6/8
+      &__company
+        grid-column: 8/10
+      &__contacts
+        grid-column: 10/12
+@media (max-width: 992px)
+  .container
+    // max-width: 800px
+    width: 92%
+  .navbar
+    &-wrapper
+      +use-font($ossb, 14px, 22px)
+      &-small
+        +position(580px)
+    &__item
+      padding: 3px 9px
+      border-radius: 8px
+      &--active
+        padding: 3px 9px
+  .hero
+    margin-bottom: 80px
+    &-container
+      max-width: 992px
+      // width: 92%
+    &__inner
+      min-height: 624px
+      max-height: 1900px
+      padding-top: 26px
+      padding-bottom: 41px
+      padding-left: 28px
+    &-tag
+      width: 175px
+      margin-bottom: 23px
+      +use-font($ossb, 14px, 20px, $label)
+    &__title
+      width: 365px
+      margin-top: 0
+      margin-bottom: 20px
+      +use-font($hkgr, 48px, 60px)
+    &__text
+      width: 400px
+      margin-bottom: 35px
+      +use-font($osr, 18px, 32px)
+      z-index: 1
+    &__button
+      display: inline-block
+      width: 259px
+      padding: 15px 40px
+      margin-bottom: 39px
+      +use-font($osb, 18px, 25px, $light)
+      background-color: $dark
+      border-radius: 8px
+      z-index: 1
+    &-benefits
+      +position(444px)
+      z-index: 1
+      &__item
+        +position(auto)
+        +use-font($hkgm, 16px, 20px)
+        letter-spacing: 0.2px
+      &__icon
+        margin-right: 8px
+  .trends
+    &-cards
+      grid-template-columns: repeat(2, 280px)
+      grid-gap: 48px
+      grid-template-rows: repeat(4, 441px)
+      width: 608px
+    &-card
+      &__group
+        +position(260px)
+  .reviews
+    &-container
+      max-width: 630px
+      margin: 0 auto
+  .footer
+    min-height: 720px
+    &-wrapper
+      padding-top: 64px
+      grid-template-columns: repeat(11, 1fr)
+      column-gap: 30px
+      row-gap: 48px
+      grid-template-rows: repeat(2, 1fr)
+      &__main
+        margin-left: 30px
+        grid-column: 1/5
+        grid-row: 1
+      &__navigation
+        grid-column: 6/9
+        grid-row: 1
+      &__services
+        grid-column: 9/12
+        grid-row: 1
+      &__company
+        grid-column: 6/9
+        grid-row: 2
+      &__contacts
+        grid-column: 9/12
+        grid-row: 2
+@media (max-width: 768px)
+  body
+    padding-top: 102px
+  .container
+    max-width: 650px
+    width: 92%
+  .navbar
+    margin-bottom: 30px
+    &__mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &-wrapper
+      padding-top: 26px
+      padding-bottom: 18px
+      position: relative
+      &-big
+        &__mobile
+          display: flex
+          width: auto
+          height: auto
+          margin-left: auto
+          position: relative
+      &__close
+        &--mobile
+          position: absolute
+          display: flex
+          align-items: center
+          justify-content: center
+          top: -5px
+          right: -21px
+          width: 18px
+          height: 18px
+          fill: $dark
+          z-index: 400
+
+      &-small
+        height: 324px
+        // overflow-y: auto
+        &__item
+          padding: 3px 0px
+          +position(auto, center)
+          &:last-child
+            margin-left: 0
+          &:not(:last-child)
+            margin-bottom: 9px
+          &:nth-child(2)
+            margin-bottom: 10px
+          &:nth-child(3)
+            margin-bottom: 12px
+          &:nth-child(4)
+            margin-bottom: 10px
+          &:nth-child(5)
+            margin-bottom: 14px
+          &--active
+            width: 100%
+            padding: 7px 0px
+        &__mobile
+          &_hidden
+            display: none
+          &_display
+            +position(302px, flex-start, flex-start, flex, column, nowrap, flex-start, normal, left)
+            +use-font($osb, 16px, 22px, $dark)
+            position: absolute
+            right: -38px
+            top: -22px
+            padding: 31px 22px 33px 21px
+            background-color: $light
+            box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+            z-index: 399
+    &__item
+      +use-font($ossb, 16px, 22px, $dark)
+      &:last-child
+        margin-left: 0px
+      &--active
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 7px 10px
+        width: 258.4px
+        max-width: 258.4px
+        border: 2px solid $accent
+        +use-font($osb, 16px, 22px, $accent)
+        text-shadow: $accent 0 0 2px
+
+  .burger
+    +position(24px, space-between, normal, flex, column, nowrap, normal, normal, center)
+    height: 17.7px
+    padding: 0
+    border: none
+    background-color: $light
+    cursor: pointer
+    outline: none
+    &__line
+      width: 100%
+      height: 2.2px
+      background-color: $dark
+
+  .hero
+    &-container
+      max-width: 768px
+      padding-left: 20px
+      padding-right: 20px
+    &__inner
+      background-image: url(../img/hero768.jpg)
+      padding-top: 36px
+      padding-bottom: 36px
+      padding-left: 28px
+  .collection
+    margin-bottom: 80px
+    &-container
+      max-width: 672px
+      width: 92%
+    &-group
+      grid-template-columns: repeat(2, 320px)
+    &-title
+      margin-top: 0
+      margin-bottom: 23px
+    &-text
+      margin-bottom: 24px
+  .trends
+    margin-bottom: 80px
+    &-wrapper
+      +position(100%, space-between, center, flex, column)
+    &-cards
+      &--active
+        grid-template-columns: repeat(2, minmax(170px, 280px))
+        grid-gap: 48px
+        grid-template-rows: repeat(4, 441px)
+        max-width: 608px
+        min-height: 1908px
+    &-top
+      text-align: center
+      min-height: 112.5px
+      margin-bottom: 55.5px
+      &__tabs
+        +position(285px, space-between, center, flex, row, wrap, center, center, center)
+        margin: auto
+    &-title
+      flex-basis: 100%
+      margin-bottom: 27.5px
+    &-card
+      &__img
+        &-1
+          transform: scale(1)
+          top: 0
+          left: 0
+        &-2
+          transform: scale(2.1)
+          top: 165px
+          left: 52px
+  .reviews
+    // height: 415px
+    &-text
+      padding-top: 5px
+      max-height: 210px
+      margin-bottom: 32px
+    &-span
+      margin-bottom: 35px
+  .history
+    margin-bottom: 97px
+    &-all
+      padding-top: 77px
+      min-height: 832px
+      &__tag
+        margin-bottom: 24px
+      &__title
+        margin-top: 1px
+        margin-bottom: 17px
+      &__text
+        max-width: 568px
+        margin-bottom: 1px
+      &__buttons
+        margin-bottom: 0px
+      &__cards
+        width: 682px
+        margin-left: 0px
+      &-slide
+        padding-top: 17px
+        &__card
+          width: 322px
+  .card
+    &__img
+      width: 322px
+    &__inner
+      padding: 20px 32px 12px 20px
+      &-2
+        padding: 20px 48px 12px 20px
+      &-title
+        margin-bottom: 18px
+      &-slide
+        padding-top: 17px
+
+  .subscribe
+    &-container
+      padding: 73px 0px 72px 0
+    &-text
+      +position(80%, space-between, center, flex, column, wrap, center, center, center)
+      max-width: 436px
+    &-p
+      max-width: 436px
+  .footer
+    min-height: 700px
+    &-wrapper
+      padding-left: 0px
+      padding-top: 64px
+      padding-bottom: 73px
+      grid-template-columns: repeat(3, minmax(min-content, 243px))
+      row-gap: 26px
+      grid-template-rows: repeat(2, 1fr)
+      &__main
+        grid-column: 1 / 2
+        +position(243px, flex-start, flex-start, flex, column, wrap, flex-start, flex-start, left)
+        // height: 182px
+        grid-row: 1/2
+        margin-left: 0
+      &__text
+        margin-bottom: 29px
+      &__navigation
+        grid-column: 2/3
+        grid-row: 1/2
+        margin-left: 10px
+        width: 146px
+      &__services
+        width: 150px
+        grid-column: 3/4
+        grid-row: 1/2
+        margin-left: -4px
+      &__company
+        margin-left: 10px
+        grid-column: 2/3
+        grid-row: 2/3
+      &__contacts
+        margin-left: -4px
+        grid-column: 3/4
+        grid-row: 2/3
+      &__title
+        margin-bottom: 30px
+      &__item
+        margin-bottom: 24px
+@media (max-width: 738px)
+  .collection
+    margin-bottom: 104px
+    &-wrapper
+      +position(100%, space-between, center, flex, column)
+      min-height: 735px
+    &-group
+      flex-basis: 100%
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: 630px 171px
+      grid-gap: 14px
+      margin-bottom: 36px
+      &__img1
+        // width: 455px
+        // height: 300px
+        grid-column: 1/3
+        grid-row: 1/2
+        // object-fit: fit
+      &__img2
+        grid-column: 1/2
+        grid-row: 2/3
+      &__img3
+        grid-column: 2/3
+        grid-row: 2/3
+    &-description
+      min-height: 288px
+      +position(90%, flex-start, left, flex, column, wrap, center, center, center)
+    &-title
+      margin-bottom: 20px
+      +use-font($hkgb, 28px, 36px)
+      width: 100%
+    &-text
+      margin-bottom: 24px
+      width: 100%
+      +use-font($osr, 16px, 28px)
+  .history
+    margin-bottom: 90px
+    &-wrapper
+      max-width: 92%
+    &-all
+      padding-top: 28px
+      // min-height: 1181px
+      &__tag
+        margin-bottom: 24px
+        width: 94px
+        height: 24px
+        padding: 2px 10px
+      &__title
+        margin-top: 1px
+        margin-bottom: 16px
+        +use-font($hkgb, 28px, 36px, $dark)
+      &__text
+        max-width: 568px
+        width: 80%
+        +use-font($osr, 16px, 28px, $dark)
+        margin-bottom: 36px
+      &__buttons
+        margin-bottom: 26px
+        +position(112px)
+        min-width: 112px
+        // height: 48px
+        &-wrapper
+          margin-top: 0
+          &-right
+            transform: scale(0.8)
+            &--active
+              transform: scale(0.8)
+          &-left
+            transform: scale(0.8)
+            &--active
+              transform: scale(0.8)
+      &__cards
+        +position(280px, flex-start, center, flex, column, nowrap, center, center, center)
+        width: 280px
+        height: 864px
+        margin-left: 0px
+      &-slide
+        padding-top: 0
+        height: 864px
+        +position(100%, flex-start, center, flex, column, nowrap, center, flex-start, left)
+        &__card
+          width: 100%
+          // height: 420px
+  .card
+    &__img
+      width: calc(100% - 10px)
+      // height: 278px
+    &__inner
+      height: 173px
+      padding: 20px 32px 43px 20px
+      &-title
+        margin-bottom: 16px
+        +use-font($hkgr, 20px, 24px, $dark)
+        font-weight: 500
+  .trends
+    margin-bottom: 51px
+    &-wrapper
+      +position(100%, space-between, center, flex, column, nowrap)
+      min-height: auto
+    &-cards
+      &--active
+        grid-template-columns: repeat(2, 140px)
+        column-gap: 11px
+        row-gap: 19px
+        grid-template-rows: repeat(4, 234px)
+        max-width: 290px
+        min-height: auto
+    &-card
+      +position(100%, flex-start, flex-start, flex, column, nowrap, flex-start)
+      &__link
+        height: 173px
+        &-plus
+          width: 25px
+          height: 32px
+          margin-top: 10px
+        &-title
+          +use-font($hkgb, 17px, 20px, $light)
+          letter-spacing: 0.2px
+          width: 140px
+      &__img
+        height: 172px
+        margin-bottom: 13px
+        &-1
+          transform: scale(1)
+          top: 0
+          left: 0
+        &-2
+          position: absolute
+          transform: scale(2.1)
+          top: 75px
+          left: 21px
+        &-3
+          position: absolute
+          transform: scale(-1.5, 1.5)
+          top: 26px
+          left: 11px
+        &-4
+          position: absolute
+          transform: scale(1.4)
+          left: 12px
+          bottom: 10px
+        &-5
+          position: absolute
+          transform: scale(1.3)
+          top: 12px
+          left: 10px
+        &-6
+          position: absolute
+          transform: scale(1.95)
+          top: 72px
+          left: 22px
+        &-7
+          position: absolute
+          transform: scale(1.6)
+          top: 51px
+          left: 12px
+      &__title
+        +use-font($hkgb, 16px, 20px, $dark)
+        // flex-basis: 100%
+        margin-left: 0
+      &__group
+        +position(59px)
+        margin-left: 0
+      &__price
+        +use-font($osr, 14px, 24px, $grey)
+      &__icon
+        +use-font($osr, 12px, 32px, $accent )
+        letter-spacing: 0.1px
+        width: 14px
+
+    &-top
+      text-align: center
+      min-height: 112.5px
+      margin-bottom: 55.5px
+      &__tabs
+        +position(290px, space-between, center, flex, row, wrap, center, center, center)
+        margin: auto
+    &-title
+      flex-basis: 100%
+      margin-bottom: 27.5px
+  .reviews
+    min-height: 555px
+    &-container
+      max-width: 530px
+      width: 79%
+      // min-height: 415px
+      margin: 0 auto
+    &-icon
+      fill: #FAAD13
+      margin-bottom: 8px
+      width: 70px
+      height: 81px
+    &-text
+      margin-bottom: 29px
+      text-align: center
+      +use-font($hkgr, 18px, 36px, $dark)
+      letter-spacing: 0.12px
+    &-span
+      +use-font($hkgb, 20px, 24px, $dark)
+      letter-spacing: 0.2px
+      margin-bottom: 32px
+      width: 145px
+  .subscribe
+    &-title
+      +use-font($hkgb, 28px, 36px, $light)
+    &-form
+      max-width: 447px
+      width: 87vw
+      &__inner
+        &-input
+          padding: 12px 196px 12px 48px
+          margin-right: 0px
+          width: 100%
+        &-button
+          position: static
+          max-width: 100%
+          min-width: 100%
+          max-height: 48px
+          padding: 12px 12px
+          border-radius: 8px
+  .footer
+    min-height: auto
+    &-wrapper
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, minmax(min-content, max-content))
+      &__main
+        grid-column: 1 / 3
+        +position(100%, flex-start, center, flex, column, wrap, center, center, center)
+        height: auto
+        grid-row: 3/4
+      &__navigation
+        grid-column: 1/2
+        grid-row: 1/2
+        margin-left: 0px
+        width: auto
+      &__services
+        width: auto
+        grid-column: 2/3
+        grid-row: 1/2
+        margin-left: 0px
+      &__company
+        margin-left: 0px
+        grid-column: 1/2
+        grid-row: 2/3
+      &__contacts
+        margin-left: 0px
+        grid-column: 2/3
+        grid-row: 2/3
+
+@media (max-width: 568px)
+  .container
+    width: 85%
+  .hero
+    margin-bottom: 64px
+    &-container
+      max-width: 568px
+      padding-left: 0
+      padding-right: 0
+    &__inner
+      background: linear-gradient(to right, #E8EAE9 22%, rgba(238, 238, 238, 0.0001) 26%, transparent 55%,  rgba(238, 238, 238, 0.0001) 74%,  #E8EAE9 78%), url(../img/hero320.jpg) no-repeat center top
+      +position(100%, flex-end, flex-start, flex, column, nowrap, center, center, center)
+      width: 100%
+      min-height: 899px
+      padding-top: 0px
+      padding-bottom: 36px
+      padding-right: 23px
+      padding-left: 23px
+      border-radius: 8px
+      position: relative
+      &::before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        right: 0
+        bottom: 0
+        background: linear-gradient(to top, #E8EAE9 30%, rgba(238, 238, 238, 0.0001) 40%, transparent 100%)
+        z-index: -1
+    &-tag
+      width: 196px
+      padding: 4.8px 11px
+      margin-bottom: 19px
+    &__title
+      width: 100%
+      margin-bottom: 19px
+      +use-font($hkgr, 32px, 40px)
+      letter-spacing: 0.7px
+      span
+        margin-right: 7px
+    &__text
+      +use-font($osr, 16px, 20px, $primary)
+      width: 85%
+      height: auto
+      line-height: 28px
+      margin-bottom: 24px
+    &__button
+      display: inline-block
+      max-width: 258px
+      padding: 13px 12px
+      margin-bottom: 25px
+      +use-font($osb, 16px, 22px, $light)
+    &-benefits
+      +position(90%, space-between, center, flex, row, wrap, center, center, center)
+      &__item
+        +position(auto)
+        letter-spacing: 0.2px
+        // &:not(:last-child)
+        //   margin-bottom: 18px
+      &__icon
+        width: 26px
+        height: 22px
+        margin-right: 8px
+        padding: 3px
+        border: 0.75px solid rgba(21, 101, 216, 0.2)
+        border-radius: 12px
+        fill: $accent
+  .collection
+    &-container
+      max-width: 548px
+    &-wrapper
+      // +position(100%, space-between, center, flex, column)
+      min-height: 741px
+    &-group
+      flex-basis: 100%
+      grid-template-columns: repeat(2, 138px)
+      grid-template-rows: 300px 97px
+      grid-gap: 14px
+      margin-bottom: 36px
+      &__image
+        object-fit: cover
+        overflow: hidden
+        border-radius: 4px
+      // &__image1
+      //   top: 20px
+      //   transform: scale(0.9, 1)
+      &__img1
+        grid-column: 1/3
+        grid-row: 1/2
+      &__img2
+        grid-column: 1/2
+        grid-row: 2/3
+      &__img3
+        grid-column: 2/3
+        grid-row: 2/3
+    &-description
+      min-height: 288px
+      +position(290px, flex-start, left, flex, column, wrap, center, center, center)
+    &-title
+      margin-bottom: 20px
+      +use-font($hkgb, 28px, 36px)
+      max-width: 290px
+    &-text
+      margin-bottom: 24px
+  .trends
+    &-title
+      margin-bottom: 22.5px
+      +use-font($hkgb, 28px, 36px)
+    &-top
+      margin-bottom: 18.5px
+      &__tabs
+        width: 218px
+        +use-font($osr, 16px, 22px, $primary)
+        max-width: 100%
+      &__tab
+        max-width: 76px
+        &:not(:last-child)
+          margin-right: 16px
+        &--active
+          +use-font($osb, 16px, 22px, $dark)
+
+@media (max-width: 480px)
+  .modal
+    &__dialog
+      padding: 30px 42px
+    &__button
+      width: 100%
+      padding: 15.5px 25.5px
+  .footer
+    &-wrapper
+      padding-top: 48px
+      padding-bottom: 73px
+      padding-left: 10px
+      grid-template-columns: repeat(1, 1fr)
+      row-gap: 30px
+      grid-template-rows: repeat(5, minmax(min-content, max-content))
+      &__main
+        grid-column: 1
+        +position(99%, center, center, flex, column, nowrap, center, center, center)
+        grid-row: 5
+        margin-left: 0px
+        height: 223px
+      &__logo
+        margin-bottom: 14px
+      &__link
+        margin-left: 0px
+      &__text
+        margin-bottom: 19px
+        margin-right: 11px
+        +use-font($osr, 14px, 24px, $grey)
+        text-align: center
+      &__icons
+        +position(185px)
+      &__navigation
+        grid-column: 1
+        grid-row: 1
+      &__services
+        // margin-left: 4px
+        grid-column: 1
+        grid-row: 2
+      &__company
+        // margin-left: 5px
+        grid-column: 1
+        grid-row: 3
+      &__contacts
+        // margin-left: 6px
+        grid-column: 1
+        grid-row: 4
+      &__title
+        +use-font($osb, 16px, 22px, $dark)
+        margin-bottom: 20px
+      &__item
+        +use-font($osr, 14px, 20px, $dark)
+        margin-bottom: 0
+        &:not(:last-child)
+          margin-bottom: 15px
+@media (max-width: 400px)
+  body
+    padding-top: 88px
+  .navbar
+    &-wrapper
+      padding-top: 18px
+  .hero
+    &-container
+      max-width: 320px
+    &__inner
+      background: url(../img/hero320.jpg) no-repeat center center
+      position: relative
+      &::before
+        position: absolute
+        background: linear-gradient(to top, #E8EAE9 30%, rgba(238, 238, 238, 0.0001) 40%, transparent 100%)
+    &__text
+      width: 89%
+    &-benefits
+      width: 100%
+      &__item
+        &:not(:last-child)
+          margin-bottom: 18px
+        &:last-child
+          margin-left: 25vw
+      // &__icon
+      //   width: 20px
+      //   height: 20px
+  .reviews
+    &-container
+      max-width: 280px
+      width: 92%
+      // min-height: 555px
+      margin: 0 auto
+    &-text
+      max-height: 360px
+  .collection
+    margin-bottom: 51px
+    &-group
+      &__img1
+        background: linear-gradient(to right, #d2d3d2 9%, rgba(238, 238, 238, 0.0001) 13%, transparent 55%,  rgba(238, 238, 238, 0.0001) 74%,  #E8EAE9 78%), url(../img/collection/collection-main.jpg) no-repeat 16px -47px/258px 395px
+      &__image1
+        display: none
+    &-text
+      width: 96%
+    &-next
+      &__link
+        +use-font($osb, 14px, 22px, $accent)
+
+  .trends
+    &-container
+      max-width: 320px
+      width: 100%
+      padding-left: 0px
+      padding-right: 0px
+    &-card
+      &__link
+        &-plus
+          margin-top: 19px
+          margin-bottom: 13px
+    // &-top
+    //   margin-bottom: 18.5px
+  .history
+    margin-bottom: 41px
+    &-all
+      &__title
+        min-height: 52px
+        margin-bottom: 0
+        span
+          display: none
+      &__text
+        max-width: 100%
+        width: 100%
+        margin-bottom: 32px
+      &__buttons
+        margin-bottom: 0px
+        width: 122px
+      &-slide
+        &__card
+          width: 100%
+  .card
+    &__inner
+      padding: 20px 32px 43px 20px
+      &-2
+        padding: 20px 5px 43px 22px
+    &__img
+      height: 278px
+      width: 100%
+  .subscribe
+    &-container
+      padding: 64px 0px 66px 0
+    &-title
+      margin-bottom: 25px
+    &-text
+      width: 95%
+    &-p
+      +use-font($osr, 16px, 28px, $light-color)
+      margin-bottom: 36px
+    &-form
+      &__inner
+        &-input
+          padding: 12px 15px 12px 45px
+@media  (hover: hover) and (pointer: fine)
+  .navbar
+    &-logo
+      &__img
+        &:hover
+          transform: scale(1.1)
+    &-wrapper
+      &-small
+        &__item
+          &:hover
+            color: $accent
+          &--active
+            &:hover
+              color: $light
+              background-color: $accent
+  .modal
+    &__button
+      &:hover
+        color: $light
+        background-color: $dark
+    &__title
+      &:hover
+        color: $dark
+  .hero
+    &__button
+      &:hover
+        transform: scale(1.05)
+  .collection
+    &-group
+      &__image
+        &:hover
+          transform: scale(1.1)
+    &-next
+      &__link
+        &:hover
+          transform: scale(1.02)
+    &-top
+      &__link
+        &:hover
+          transform: scale(1.1)
+  .trends
+    &-card
+      &__img
+        &:hover
+          transform: scale(1.1)
+    &-card
+      &__link
+        &:hover
+          background-color: $grey
+  .history
+    &-all
+      &__buttons
+        &-wrapper
+          &:hover
+            transform: scale(1.05)
+  .card
+    &__inner
+      &-readmore
+        &:hover
+          color: $label
+  .subscribe
+    &-form
+      &__inner
+        &-button
+          &:hover
+            color: $accent
+  .footer
+    &-wrapper
+      &__logo
+        &:hover
+          transform: scale(1.1)
+      &__link
+        &:hover
+          color: $accent
+      &__icon
+        &:hover
+          transform: scale(1.1)
+  .card
+    &__img
+      &:hover
+        transform: scale(1.1)

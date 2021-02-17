@@ -1,0 +1,129 @@
+.trends
+  margin-bottom: 145px
+  &-container
+    max-width: 1195px
+    width: 92%
+    margin: 0 auto
+    padding-left: 30px
+    padding-right: 30px
+  &-wrapper
+    +position(100%, space-between, space-between, flex, column)
+  &-top
+    +position(100%)
+    margin-bottom: 48px
+    &__tabs
+      // +position(285px)
+      +position(auto, inherit)
+      +use-font($osr, 18px, 25px, $primary)
+      max-width: 900px
+    &__tab
+      +position(auto, center)
+      max-width: 270px
+      &:not(:last-child)
+        margin-right: 38px
+      &--active
+        +use-font($osb, 18px, 25px, $dark)
+  &-cards
+    display: none
+    min-height: 100%
+    &--active
+      display: grid
+      grid-template-columns: repeat(4, 260px)
+      grid-gap: 50px 30px
+      grid-template-rows: repeat(2, 441px)
+      align-items: flex-start
+      width: 1130px
+      margin: 0 auto
+  &-card
+    height: 100%
+    +position(100%)
+    align-content: space-between
+    border-radius: 8px
+    overflow: hidden
+    &__link
+      height: 350px
+      +position(100%, center, center, flex, column, wrap, center, center, center)
+      background-color: $accent
+      border-radius: 8px
+      &-plus
+        fill: $light
+        width: 28px
+        height: 28px
+        margin-top: 21px
+        margin-bottom: 25px
+        +use-font($osr, 32px, 37px, $light)
+        font-weight: 900
+      &-title
+        +use-font($hkgb, 24px, 32px, $light)
+        letter-spacing: 0.2px
+        width: 215px
+    &__image
+      width: 100%
+      max-height: 350px
+      height: 350px
+      // object-fit: cover
+      border-radius: 8px
+      overflow: hidden
+      margin-bottom: 20px
+    &__img
+      transition: transform 0.2s ease-out 0.2s
+      position: relative
+      width: 100%
+      max-height: 350px
+      height: 350px
+      object-fit: cover
+      border-radius: 8px
+      overflow: hidden
+      &-1
+        position: absolute
+        max-height: 100%
+        height: 350px
+        transform: scale(1)
+        top: 0px
+        left: 2px
+      &-2
+        position: absolute
+        transform: scale(2.17)
+        top: 170px
+        left: 33px
+      &-3
+        position: absolute
+        transform: scale(-1.6, 1.6)
+        top: 66px
+        left: 9px
+      &-4
+        position: absolute
+        transform: scale(1.6)
+        bottom: 17px
+        left: 13px
+      &-5
+        position: absolute
+        transform: scale(1.3)
+        top: 31px
+        left: 18px
+      &-6
+        position: absolute
+        transform: scale(2.57)
+        top: 227px
+        left: 40px
+      &-7
+        position: absolute
+        transform: scale(2.17)
+        top: 197px
+        left: 18px
+    &__title
+      +use-font($hkgb, 24px, 32px, $dark)
+      letter-spacing: 0.2px
+      margin-left: 10px
+      margin-bottom: 3px
+    &__group
+      +position(240px)
+      margin-left: 10px
+    &__price
+      +use-font($osr, 20px, 36px, $grey)
+    &__icon
+      fill: $accent
+      width: 23px
+      height: 21px
+      +use-font($osr, 20px, 32px, $accent)
+      letter-spacing: 0.166667px
